@@ -1,60 +1,70 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- The title displayed in the browser tab -->
   <title>CodePen - Andy Nkansah - First Website</title>
-  
-
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<html>
+  <!-- Main content of the webpage begins here -->
+  
+  <!-- Navigation Bar -->
+  <nav>
+    <h1>Welcome to My Simple Website👨‍</h1>
+    <!-- List of navigation links to different sections of the website -->
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact Form</a></li>
+    </ul>
+  </nav>
 
-<head>
-  <title>My Simple Website</title>
-</head>
+  <!-- Home Section -->
+  <section id="Home">
+    <h2>🏘️Home</h2>
+    <p>Welcome to my website! Here you can find an image gallery and a contact form.</p>
+  </section>
 
-<nav>
-  <h1>Welcome to My Simple Website👨‍</h1>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Gallery</a></li>
-    <li><a href="#">Contact Form</a></li>
-  </ul>
-</nav>
+  <!-- Gallery Section -->
+  <section id="Gallery">
+    <h2>🖼️Gallery</h2>
+    <!-- Image display in a container -->
+    <div>
+      <!-- Images displayed in the gallery -->
+      <img src="https://cdn.pixabay.com/photo/2024/06/05/19/45/mountains-8811206_640.jpg" width="200px" height="100px" alt="mountain landscape">
+      <img src="https://cdn.pixabay.com/photo/2022/04/03/14/22/city-7109073_640.jpg" width="200px" height="100px" alt="city view">
+      <img src="https://cdn.pixabay.com/photo/2024/09/12/14/56/lake-9042527_640.png" width="200px" height="100px" alt="lake view">
+    </div>
+  </section>
 
-<section id="Home">
-  <h2>🏘️Home</h2>
-  <p>Welcome to my website! Here you can find an image gallery and a contact form</p>
-</section>
-
-<section id="Gallery">
-  <h2>🖼️Gallery</h2>
-  <div>
-    <img src="https://cdn.pixabay.com/photo/2024/06/05/19/45/mountains-8811206_640.jpg" width=200px heigh=100px alt="image"></img>
-    <img src="https://cdn.pixabay.com/photo/2022/04/03/14/22/city-7109073_640.jpg" width=200px heigh=100px alt="image"></img>
-    <img src="https://cdn.pixabay.com/photo/2024/09/12/14/56/lake-9042527_640.png" width=200px heigh=100px alt="image"></img>
-  </div>
-
-  <section id=form>
+  <!-- Contact Form Section -->
+  <section id="form">
     <h2>ℹ️Contact Form</h2>
+    <!-- Form for users to submit their information -->
     <form>
+      <!-- User name input field -->
       <label for="name">Name✍️:</label><br>
-      <input type="text" id="name" required></input><br><br>
+      <input type="text" id="name" required><br><br>
+      
+      <!-- User email input field -->
       <label for="email">Email📧:</label><br>
-      <input type="text" id="name" required></input><br><br>
+      <input type="email" id="email" required><br><br>
+      
+      <!-- Message textarea for user to type a message -->
       <label for="message">Message📩:</label><br>
       <textarea id="message" name="message" required></textarea><br><br>
-      <input type="submit" value="Submit" class="submit-btn" required></input>
+      
+      <!-- Submit button for the form -->
+      <input type="submit" value="Submit" class="submit-btn" required>
     </form>
   </section>
 
-  <main>
-    <footer>
-      <p>&copy; 2024 My Simple Website 🎉</p>
-
-</html>
-<!-- partial -->
+  <!-- Footer Section -->
+  <footer>
+    <!-- Footer text with copyright information -->
+    <p>&copy; 2024 My Simple Website 🎉</p>
+  </footer>
   
 </body>
 </html>

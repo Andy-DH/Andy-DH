@@ -1,0 +1,21 @@
+      S.N             Year                Age        Menopause 
+ Min.   :  1.00   Length:212         Min.   :13.00   Post: 71  
+ 1st Qu.: 54.75   Class :character   1st Qu.:30.00   Pre :141  
+ Median :107.50   Mode  :character   Median :40.00             
+ Mean   :107.31                      Mean   :39.81             
+ 3rd Qu.:160.25                      3rd Qu.:49.25             
+ Max.   :213.00                      Max.   :77.00             
+ Tumor.Size..cm.   Inv.Nodes           Breast    Metastasis
+ Min.   : 1.000   Length:212         #    :  5   No :139   
+ 1st Qu.: 2.000   Class :character   Left :107   Yes: 73   
+ Median : 4.000   Mode  :character   Right:100             
+ Mean   : 4.269                                            
+ 3rd Qu.: 6.000                                            
+ Max.   :14.000                                            
+ Breast.Quadrant    History    Diagnosis.Result       Diagnosis  
+ Length:212         No  :124   Length:212         Benign   :120  
+ Class :character   Yes : 87   Class :character   Malignant: 92  
+ Mode  :character   NA's:  1   Mode  :character                  
+                                                                 
+                                                                 
+                                                                 

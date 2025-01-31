@@ -1,18 +1,18 @@
-      S.N             Year                Age        Menopause 
- Min.   :  1.00   Length:212         Min.   :13.00   Post: 71  
- 1st Qu.: 54.75   Class :character   1st Qu.:30.00   Pre :141  
- Median :107.50   Mode  :character   Median :40.00             
- Mean   :107.31                      Mean   :39.81             
- 3rd Qu.:160.25                      3rd Qu.:49.25             
- Max.   :213.00                      Max.   :77.00             
- Tumor.Size..cm.   Inv.Nodes           Breast    Metastasis
- Min.   : 1.000   Length:212         #    :  5   No :139   
- 1st Qu.: 2.000   Class :character   Left :107   Yes: 73   
- Median : 4.000   Mode  :character   Right:100             
- Mean   : 4.269                                            
- 3rd Qu.: 6.000                                            
- Max.   :14.000                                            
- Breast.Quadrant    History    Diagnosis.Result       Diagnosis  
+      S.N              Year           Age        Menopause 
+ Min.   :  1.00   Min.   :2019   Min.   :13.00   Post:  0  
+ 1st Qu.: 54.75   1st Qu.:2019   1st Qu.:30.00   Pre :  0  
+ Median :107.50   Median :2020   Median :40.00   NA's:212  
+ Mean   :107.31   Mean   :2020   Mean   :39.81             
+ 3rd Qu.:160.25   3rd Qu.:2020   3rd Qu.:49.25             
+ Max.   :213.00   Max.   :2020   Max.   :77.00             
+ Tumor.Size..cm.    Inv.Nodes        Breast    Metastasis
+ Min.   : 1.000   Min.   :0.0000   #    :  5   No  :  0  
+ 1st Qu.: 2.000   1st Qu.:0.0000   Left :107   Yes :  0  
+ Median : 4.000   Median :0.0000   Right:100   NA's:212  
+ Mean   : 4.269   Mean   :0.3538                         
+ 3rd Qu.: 6.000   3rd Qu.:1.0000                         
+ Max.   :14.000   Max.   :3.0000                         
+ Breast.Quadrant    History    FamilyHistory          Diagnosis  
  Length:212         No  :124   Length:212         Benign   :120  
  Class :character   Yes : 87   Class :character   Malignant: 92  
  Mode  :character   NA's:  1   Mode  :character                  

@@ -11,19 +11,20 @@ showtext_auto()
 font_add("DejaVu Sans", regular = "DejaVuSans.ttf", bold = "DejaVuSans-Bold.ttf", italic = "DejaVuSans-Oblique.ttf", bolditalic = "DejaVuSans-BoldOblique.ttf")
 
 # Read and clean the data
-breast_cancer_data <- read.csv("breast-cancer-dataset.csv")
+breast_cancer_data <- read.csv("cleaned_breast_cancer_data.csv")
 
 # Inspect the unique values in the Tumor.Size..cm. column
 print(unique(breast_cancer_data$Tumor.Size..cm.))
 
-# Clean the data
+# Clean the data and conditionally remove Diagnosis.Result column if it exists
 clean_data <- breast_cancer_data %>%
+  select(-one_of("Diagnosis.Result")) %>%  # Remove the column only if it exists
   mutate(
     Menopause = factor(Menopause, levels = c(0, 1), labels = c("Post", "Pre")),
     Breast = factor(Breast),
     Metastasis = factor(Metastasis, levels = c(0, 1), labels = c("No", "Yes")),
     History = factor(History, levels = c(0, 1), labels = c("No", "Yes")),
-    Diagnosis = factor(`Diagnosis.Result`, levels = c("Benign", "Malignant")),
+    Diagnosis = factor(Diagnosis, levels = c("Benign", "Malignant")),
     Age = as.numeric(Age),  # Convert Age to numeric
     Tumor.Size..cm. = as.numeric(Tumor.Size..cm.)  # Convert Tumor.Size..cm. to numeric
   ) %>%
